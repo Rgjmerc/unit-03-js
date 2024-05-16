@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lesson 02 - User Interactivity</h1>
+    <label for="">Name:</label>
+    <input type="text" name="" id="name">
+    <br>
+    <br>
+    <button onclick="submit()">Submit</button>
+    <br>
+    <br>
+    <h2 id="heading"></h2>
+    <br>
+    <br>
+    <label>Guess a number:</label>
+    <input type="number" name="" id="number">
+    <br>
+    <br>
+    <button onclick="game()">Submit</button>
+    <br>
+    <br>
+    <h2 id="guess"></h2>
+    <script>
+        let nameInput = document.getElementById("name")
+        let heading = document.getElementById("heading")
+        let numberInput = document.getElementById("number")
+        let guess = document.getElementById("guess")
+        function submit() {
+            console.log(nameInput.value)
+            heading.innerText = ("My name is " + nameInput.value)
+        }
+        function game() {
+            console.log()
+        }
+    </script>
+</body>
+</html>

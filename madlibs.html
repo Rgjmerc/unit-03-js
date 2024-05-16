@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>MadLibs</h1>
+    <br>
+    <br>
+    <label for="">Color</label>
+    <input type="color" id="color">
+    <br>
+    <br>
+    <label for="">Name:</label>
+    <input type="text" name="" id="name">
+    <br>
+    <br>
+    <label for="">Item:</label>
+    <input type="text" name="" id="item">
+    <br>
+    <br>
+    <label for="">First Noun:</label>
+    <input type="text" name="" id="noun">
+    <br>
+    <br>
+    <label for="">Second Noun:</label>
+    <input type="text" name="" id="noun2">
+    <br>
+    <br>
+    <label for="">Animal:</label>
+    <input type="text" name="" id="animal">
+    <br>
+    <br>
+    <label for="">Verb:</label>
+    <input type="text" name="" id="verb">
+    <br>
+    <br>
+    <button onclick="submit()">Enter</button>
+    <h4 id="madlib"></h4>
+    <script>
+        let nameInput = document.getElementById("name")
+        let colorInput = document.getElementById("color")
+        let itemInput = document.getElementById("item")
+        let nounInput = document.getElementById("noun")
+        let noun2Input = document.getElementById("noun2")
+        let animalInput = document.getElementById("animal")
+        let verbInput = document.getElementById("verb")
+        let madlib = document.getElementById("madlib")
+
+        function submit() {
+            document.body.style.backgroundColor = colorInput.value
+            madlib.innerText = (nameInput.value + " roamed around the world looking for " + itemInput.value + 
+            " to survive. " + nameInput.value + " had a goal, which was to build himself a " + colorInput.value + 
+            nounInput.value + " to stay in. Eventually " + nameInput.value + " would make his " + nounInput.value + 
+            " and then leave to look for " + noun2Input.value +" and other supplies. Once " + nameInput.value + 
+            " returned he found an unexpected visitor at his " + nounInput.value + ". A " + animalInput.value + 
+            " was waiting for him, trying to enter his " + nounInput.value + " " + verbInput.value +".")   
+        }
+        
+
+    </script>
+</body>
+</html>
+<!-- name + " roamed around the world looking for " + item1 + " to survive. " + name + " had a goal, which was to build himself a " + 
+color + noun + " to stay in. Eventually " + name + " would make his " + noun + " and then leave to look for " + noun2 + " and other 
+supplies. Once " + name + " returned he found an unexpected visitor at his " + noun + ". A " + animal + " was waiting for him, trying to 
+enter his " + noun + " " + verb +"." -->
