@@ -26,17 +26,30 @@
     <br>
     <br>
     <h2 id="guess"></h2>
+    <br>
+    <h2 id="guess2"></h2>
     <script>
-        let nameInput = document.getElementById("name")
-        let heading = document.getElementById("heading")
         let numberInput = document.getElementById("number")
         let guess = document.getElementById("guess")
+        let guess2 = document.getElementById("guess2")
+        let nameInput = document.getElementById("name")
+        let heading = document.getElementById("heading")
+       
         function submit() {
             console.log(nameInput.value)
             heading.innerText = ("My name is " + nameInput.value)
         }
+        
         function game() {
-            console.log()
+            console.log(numberInput.value)
+            guess.innerText = ("Your guess is " + numberInput.value)
+            if (numberInput.value == 4) {
+                guess2.innerText = ("You guessed my number")
+                
+            }
+            else {
+                    guess2.innerHTML = ("That is not my number")
+                }
         }
     </script>
 </body>
